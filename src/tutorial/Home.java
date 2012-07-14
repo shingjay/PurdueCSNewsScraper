@@ -1,7 +1,9 @@
 package tutorial;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
+import javax.xml.*;
+import javax.xml.parsers.*;
 
 import org.jsoup.*;
 import org.jsoup.nodes.*;
@@ -11,6 +13,9 @@ import classes.Doc;
 
 public class Home {
 	
+	/**
+	 * @return a list of articles
+	 */
 	public static ArrayList<Doc> getNewsArticles() 
 	{
 		ArrayList<String> urls = new ArrayList<String>();
@@ -64,10 +69,9 @@ public class Home {
 	public static void main(String [] args) 
 	{
 		ArrayList<Doc> news = getNewsArticles();
-		for (Doc doc : news)
-		{
-			System.out.println("Link : " + doc.getLink() + "\nTitle : " + doc.getTitle() + "\nContent : " + doc.getContent() + "\n");
-		}
-		
+		ConvertXML converter = new ConvertXML();
+		System.out.println(converter.Convert(news));
 	}
+	
+
 }
