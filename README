@@ -1,4 +1,8 @@
 My first simple application using Jsoup and Java to scrap the news articles off Purdue CS department's webpage.
  
 Update 1: Saves the results into an XML file
-I read that its slow using DOM, but I just figured I'd tried it out anyway. I'll probably try to return a JSON object next time.
+Update 2: Saves the results into a JSON file
+
+Future steps:
+1.  I'll be braver and try to set up a Maven project for this instead, as well as adding the news articles into a database
+2.  After that I'll probably try to create a scheduler to run the scraper every day.

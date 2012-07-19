@@ -69,8 +69,9 @@ public class Home {
 	public static void main(String [] args) 
 	{
 		ArrayList<Doc> news = getNewsArticles();
-		ConvertXML converter = new ConvertXML();
-		System.out.println(converter.Convert(news));
+		//ConvertXML converter = new ConvertXML();
+		ConvertJSON converter = new ConvertJSON();
+		System.out.println(converter.convert(news));
 	}
 	
 

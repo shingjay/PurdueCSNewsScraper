@@ -17,7 +17,7 @@ public class ConvertXML {
 	public ConvertXML() {}
 	
 	// parses to the arraylist into an XML file
-	public boolean Convert(ArrayList<Doc> docs) 
+	public boolean convert(ArrayList<Doc> docs) 
 	{
 		try 
 		{
